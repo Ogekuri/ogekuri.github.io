@@ -1,0 +1,103 @@
+body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  color: purple;
+  background-color: #d8da3d }
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em }
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: blue }
+a:visited {
+  color: purple }
+address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted }
+.p {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.map svg {
+  height: auto;
+  width: 1300px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 100;
+  left: 0;
+}
+
+.map g {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1;
+}
+
+.map g:hover {
+  fill: #fc0 !important;
+  cursor: help;
+}
+
+.label_text {
+  space:preserve;
+  linespacing:100%;
+}
+
+/* label style */
+.label_tspan {
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  font-stretch:normal;
+  font-size:10px;
+  line-height:100%;
+  font-family:Arial;
+  text-align:start;
+  text-anchor:start;
+  display:inline;
+  fill:#000000;
+  fill-opacity:1;
+  stroke:none;
+}
+
+/* box style */
+.label_box {
+  fill:#EAEBEC;
+  fill-opacity:1;
+}
+
+
+/* todo */
+.info_panel {
+  background-color: rgba(255,255,255, .8);
+  padding: 5px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  border: 1px solid #333;
+  color: #333;
+  white-space: nowrap;
+}
+
+.info_panel::first-line {
+  font-weight: bold;
+}
+

@@ -1,0 +1,71 @@
+.p {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.map svg {
+  height: auto;
+  width: 1300px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 100;
+  left: 0;
+}
+
+.map g {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1;
+}
+
+.map g:hover {
+  fill: #fc0 !important;
+  cursor: help;
+}
+
+.label_text {
+  space:preserve;
+  linespacing:100%;
+}
+
+/* label style */
+.label_tspan {
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  font-stretch:normal;
+  font-size:10px;
+  line-height:100%;
+  font-family:Arial;
+  text-align:start;
+  text-anchor:start;
+  display:inline;
+  fill:#000000;
+  fill-opacity:1;
+  stroke:none;
+}
+
+/* box style */
+.label_box {
+  fill:#EAEBEC;
+  fill-opacity:1;
+}
+
+
+/* todo */
+.info_panel {
+  background-color: rgba(255,255,255, .8);
+  padding: 5px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  border: 1px solid #333;
+  color: #333;
+  white-space: nowrap;
+}
+
+.info_panel::first-line {
+  font-weight: bold;
+}
+
