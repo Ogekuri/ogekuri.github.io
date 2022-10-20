@@ -77,7 +77,7 @@ conferma_onclick = function() {
 	if ((c_region_id > 0) && (c_nick.length > 2) && (c_twitter.length > 2))
 	{
 		var jsonPostData = JSON.stringify({"region_id": c_region_id, "nick": c_nick, "twitter": c_twitter});
-		postJSON('http://www.porcate.org:3021/api/v1/nicks', "callback_args", jsonPostData, function(err, callback_args, jsonData) {
+		postJSON('https://www.porcate.org:3021/api/v1/nicks', "callback_args", jsonPostData, function(err, callback_args, jsonData) {
 			// JSON result in `data` variable
 			if (err !== null) {
 				alert('Something went wrong: ' + err);
@@ -170,7 +170,7 @@ function RunOnLoad() {
 function PopolateSelect() {
 
 
-	getJSON('http://www.porcate.org:3021/api/v1/regions?order_by=region', "callback_args",function(err, callback_args ,jsonData) {
+	getJSON('https://www.porcate.org:3021/api/v1/regions?order_by=region', "callback_args",function(err, callback_args ,jsonData) {
 	    
 	    // JSON result in `data` variable
 	    if (err !== null) {
@@ -201,7 +201,7 @@ function PopolateMap() {
 	layer.innerHTML = '';
 	layer.textContent = '';
 	
-	getJSON('http://www.porcate.org:3021/api/v1/activeregs', "callback_args", function(err, callback_args, jsonData) {
+	getJSON('https://www.porcate.org:3021/api/v1/activeregs', "callback_args", function(err, callback_args, jsonData) {
 	    
 	    // JSON result in `data` variable
 	    if (err !== null) {
@@ -219,7 +219,7 @@ function PopolateMap() {
 				var region = regions[i];
 				//console.log(region);
 				
-				getJSON('http://www.porcate.org:3021/api/v1/nicks?region_id=' + region.id, region, function(err, region, jsonData) {
+				getJSON('https://www.porcate.org:3021/api/v1/nicks?region_id=' + region.id, region, function(err, region, jsonData) {
 			
 					// JSON result in `data` variable
 					if (err !== null) {
