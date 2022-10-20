@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Splatoon - Italian players map</title>
+  <meta name="author" content="Francesco Rolando">
+  <meta name="description" content="Splatoon - Italian players map">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body onload="RunOnLoad()">
+
+<h3>Splatoon - Italian players map</h3>
+
+<div id="userform" >
+
+<div id="insert">
+
+<table>
+<tr><td>Zone</td>
+<td>Nickname</td>
+<td>Twitter Username</td>
+</tr>
+<tr>
+<td>
+<select id="RegionSelect" name="region_id">
+</select>
+</td>
+<td><input type="text" id="nick" name="nick" size="10"></td>
+<td><input type="text" id="twitter" name="twitter" size="15"></td>
+<td><button id="myBtn" onclick="btn_onclick();">Add</button></td>
+</tr>
+</table>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="span_onclick();">&times;</span>
+    <div id="conferma">
+	</div>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="map">
+<svg
+   id="svgmap"
+   height="1500"
+   width="1200"
+  <metadata
+     id="metadatamap">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs>
+     id="defs"
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 20 20">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f00" />
+    </marker>
+  </defs>
+
+  <!--<image onclick='clicked(evt)' width="1200" height="1500" xlink:href="images/Italian_regions_provinces.png"></image>-->
+  <image width="1200" height="1500" xlink:href="images/Italian_regions_provinces.png"></image>
+ 
+  <g
+     id="MapLabels">
+  </g>
+</svg>
+</div>
+
+
+</body>
+</html>
+
