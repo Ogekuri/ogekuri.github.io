@@ -6,6 +6,9 @@
 
 ## Work in Progress
 
-Hi there! I'm currently building my new home page here at [**ogekuri.github.io**](https://github.com/ogekuri).
+Hi there! I'm currently building my new home page here at **ogekuri.github.io**.
 
 Check back soon to see what's new.
+
+[Visit my GitHub Profile](https://github.com/ogekuri)
+
